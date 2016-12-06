@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+    background:#fff;
+    font:normal 24px/44px 宋体;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+a:hover{
+    color:#1974A1;
+}
+.tabox{
+    width:490px;
+    margin:100px auto;
+    border-top:2px solid #c00;
+}
+.tabox .bd{
+    height:430px;
+    border:1px solid #ddd;
+    border-top:0;
+}
+.tabox .p-img{
+    width:130px;
+    height:132px;
+    padding:30px 13px 0 13px;
+    margin:0 auto;
+    text-align:center;
+}
+.tabox .p-name{
+    font:normal 20px/40px 宋体;
+    margin-top: 30px;
+    height:36px;
+    line-height:18px;
+    word-break:break-all;
+    word-wrap:break-word;
+    overflow:hidden;
+    text-align:center;
+}
+
+.tabox .p-price{
+    margin-top: 10px;
+    color:#999;
+    text-align:center;
+}
+
+.tabox .p-price strong{
+    color:#c00;
+    font-size:24px;
+    font-family:verdana;
+    text-align:center;
+}
+.tabox .p-number{
+    font-size:14px;
+    margin-top: 10px;
+    color:#999;
+    text-align:center;
+}
+span{
+    padding:0 2px;
+    border:1px #c0c0c0 solid;
+    cursor:pointer;
+}
+#number{
+    width: 15px;
+    text-align: center;
+    margin: 0px 3px;
+}
+.tabox #cart{
+    margin-top: 30px;
+    text-align: center;
+}
+.rightf{
+    position: fixed;
+    right: 100px;
+    top:50px;
+    width: 200px;
+    clear: both;
+    text-align: center;
+}
+.br{
+    background:#EEE;
+    margin:0px auto;
+}
+div dd{
+    margin:0px;
+    font-size:10pt;
+}
+div dd.dd_name
+{
+    color:blue;
+}
+.bimage{
+    width:130px;
+    height:132px;
+    padding:10px 13px 0 13px;
+    margin:0 auto;
+    text-align:center;
+}
+.bname{
+    margin-top: 5px;
+    height:15px;
+    line-height:15px;
+    word-break:break-all;
+    word-wrap:break-word;
+    overflow:hidden;
+    text-align:center;
+    font-size: 15px;
+}
+.bprice{
+    margin-top: 5px;
+    color:#c00;
+    text-align:center;
+    font-size: 15px;
+    height:15px;
+    line-height:15px;
+}
