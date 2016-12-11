@@ -22,13 +22,13 @@
       var num =  document.getElementById("number").value;
       J.dialog.get({id: 'haoyue_creat',title: '购物成功',width: 600,height:400, link: '<%=request.getContextPath()%>/com/servlet/CartServlet?id='+id+'&num='+num+'&action=add', cover:true});
     }
-    function add() {
+    function add() {  //增加商品数量
       var num = parseInt(document.getElementById("number").value);
       if(num<100) {
         document.getElementById("number").value = ++num;
       }
     }
-    function sub() {
+    function sub() {  //减少商品数量
       var num = parseInt(document.getElementById("number").value);
       if(num>1) {
         document.getElementById("number").value = --num;
@@ -44,7 +44,7 @@
   <%
     ItemsDAO itemsdao = new ItemsDAO();
     Items item = itemsdao.getItemsById(Integer.parseInt(request.getParameter("id")));
-    if (item!=null){
+    if (item!=null){    //若item存在
   %>
   <div class="bd">
     <div class="p-img">
@@ -88,9 +88,9 @@
   <b>您浏览过的商品</b>
   <%
     ItemsDAO itemsdao1 = new ItemsDAO();
-    ArrayList<Items> vlistitems = itemsdao1.getViewList(list);
+    ArrayList<Items> vlistitems = itemsdao1.getViewList(list); //得到list中所有商品
     if(vlistitems!=null && vlistitems.size()>0){
-      for(Items i:vlistitems){
+      for(Items i:vlistitems){  //循环开始
   %>
   <div class="br">
     <div class="bimage">
@@ -104,7 +104,7 @@
     </div>
   </div>
   <%
-      }
+      }    //循环结束
     }
   %>
 </div>

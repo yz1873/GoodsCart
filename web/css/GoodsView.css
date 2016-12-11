@@ -76,3 +76,8 @@ h1{
     font-size:14px;
     font-family:verdana;
 }
+#techpic{
+    display: block;
+    text-align: center;
+    font-size:18px;
+}

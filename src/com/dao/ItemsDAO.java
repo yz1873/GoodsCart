@@ -13,10 +13,10 @@ import java.util.ArrayList;
  */
 
 //商品的DAO类
-public class ItemsDAO {
-    public ArrayList<Items> getAllItems(){
-        ArrayList<Items> list = new ArrayList<Items>();
-        Connection conn = null;
+public class ItemsDAO {     //商品dao类
+    public ArrayList<Items> getAllItems(){      //得到数据库中所有商品
+        ArrayList<Items> list = new ArrayList<Items>();  //商品list初始化
+        Connection conn = null;                   //链接初始化
         PreparedStatement stmt = null;
         ResultSet rs = null;
 

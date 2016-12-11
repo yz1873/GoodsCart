@@ -10,7 +10,7 @@ public class DBHelper {
     private static final String driver   = "com.mysql.jdbc.Driver";
     private static final String url      = "jdbc:mysql://127.0.0.1:3306/Test";
     private static final String username = "root";
-    private static final String password = "";
+    private static final String password = "890924";
     private static Connection conn       = null;
 
     //静态代码块负责加载驱动

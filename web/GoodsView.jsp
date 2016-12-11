@@ -22,9 +22,9 @@
   <div class="bd">
     <ul class="lh" style="display: none;">
       <%
-        ItemsDAO itemsdao = new ItemsDAO();
-        ArrayList<Items> list = itemsdao.getAllItems();
-        for (Items item:list){
+        ItemsDAO itemsdao = new ItemsDAO();  //加载数据业务层
+        ArrayList<Items> list = itemsdao.getAllItems(); //使用业务类方法得到数据库中所有的商品清单
+        for (Items item:list){      //循环开始，展示所有商品
       %>
       <li>
         <div class="p-img ld">
@@ -36,11 +36,12 @@
           <strong>￥<%=item.getPrice()%></strong></div>
       </li>
       <%
-        }
+        }    //循环结束
       %>
     </ul>
   </div>
 </div>
+<a id="techpic" href="TechView.jsp" target="_blank">查看购物车界面的构成</a>
 
 <script type="text/javascript">
   jQuery(".tabox").slide({delayTime: 0});

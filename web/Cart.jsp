@@ -40,9 +40,9 @@
         <th>操作</th>
       </tr>
       <%
-        if (request.getSession().getAttribute("cart")!=null){  //
-          Cart cart = (Cart)request.getSession().getAttribute("cart");
-          HashMap<Items,Integer> goods = cart.getGoods();
+        if (request.getSession().getAttribute("cart")!=null){  //查看session是否存在cart属性
+          Cart cart = (Cart)request.getSession().getAttribute("cart");   //得到其cart对象
+          HashMap<Items,Integer> goods = cart.getGoods();    //得到cart中的goods
           Set<Items> items = goods.keySet();
           Iterator<Items> it = items.iterator();
           while (it.hasNext()){
